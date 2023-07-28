@@ -1,0 +1,210 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/*Window size 3840px*/
+body {
+    font-family: 'Jost', sans-serif;
+}
+.container{max-width: 2560px;margin: auto;padding: 0px 10px;}
+/*Header*/
+header {position: relative;}
+.container.header-section,.container.footer-section {padding: 30px 10px;}
+.sticky{position: fixed;top: 0;width: 100%;background: #FFF;}
+.sticky + .banner-section {padding-top: 380px;}
+.logo-section svg {max-width: 265px;margin: auto;}
+.logo-section svg path {fill: #000;}
+.menu-section ul {    list-style: none;}
+.menu-section ul li {margin: 0px 37px;}
+.menu-section ul li a {text-transform: uppercase;text-decoration: none;letter-spacing: 1.15px;color: #000000;font-weight: 500;font-size: 0.599vw;}
+
+.hamburger-menu {display: none;position: relative;}
+.hamburger-menu a {width: 27px;margin: 0px 3px;}
+.hamburger-menu a span {display: inline-block;border: 2px solid #000000;border-radius: 5px;margin: 4px 0px;width: 100%;margin: 3px 0px;}
+.mobile-slide-down .hamburger-menu a span{position: absolute;}
+.mobile-slide-down .hamburger-menu a span:nth-child(1){    transform: rotate(-45deg);}
+.mobile-slide-down .hamburger-menu a span:nth-child(2){    transform: rotate(45deg);}
+.mobile-slide-down .hamburger-menu a span:nth-child(3){display: none;}
+/*Banner*/
+.banner-section {background-image: url(../images/pexels-photo-4110882.jpeg);background-size: cover;background-position: center; padding: 277px 0px 334px;background-attachment: fixed;}
+.banner-inner-section h1 {color: #FFFFFF;font-weight: 500;font-size: 3.125vw;text-transform: uppercase;letter-spacing: 0;}
+.banner-inner-section p {color: #FFFFFF;font-weight: 500;font-size: 0.911vw;text-transform: uppercase;line-height: 50px;letter-spacing: 1.75px;}
+.primary-btn {background: #FFF;color: #000; padding: 15px 60px;font-weight: 500;font-size: 0.521vw;text-transform: uppercase;text-decoration: none; margin-top: 55px;letter-spacing: 1px;border: 1px solid #FFF}
+.primary-btn:hover {background: transparent;border: 1px solid #FFF;transition: 0.1s ease;color: #FFF;} 
+/*Grid Section*/
+.grid-section {margin: 80px 0px 34px;}
+.grid-inner-section h2 {color: #000;font-weight: 500;font-size: 1.042vw;margin: 40px 0px;text-transform: uppercase;}
+.grid-img-container {margin: 0px 10px;width: 50%;}
+.grid-img-container img{width: 100%;height: 1084px; object-fit: cover;}
+.grid-img-section {width: 100%;}
+/*collection Section*/
+.collection-section{margin: 30px 0px;}
+.collection-inner-section h3{margin: 39px 0px;letter-spacing: 1.95px;color: #000;font-weight: 400;font-size: 0.677vw;text-transform: uppercase;}
+.collection-img-container {margin: 0px 14px; width: 100%;}
+.collection-img-container img {width: 100%;height: 664px; object-fit: cover;}
+.secondary-btn{background: #FFF;color: #000; padding: 15px 60px;font-weight: 500;font-size: 0.521vw;text-decoration: none; margin-top: 40px;letter-spacing: 1px;border: 1px solid #707070;}
+.secondary-btn:hover{background: #000;border: 1px solid #FFF;color: #FFF;    transition: 0.1s ease;}
+/*Footer*/
+.footer-logo-section a{display: inline-block;}
+.footer-logo-section svg {max-width: 264px;margin: auto;}
+.footer-logo-section svg path {fill: #000;}
+.footer-menu-section p {color: #000;font-weight: 500;letter-spacing: 0;font-size: 0.625vw;margin-bottom: 4px;}
+.footer-menu-section ul {list-style: none;}
+.footer-menu-section ul li a {color: #000;text-decoration: none;font-weight: 400;letter-spacing: 0;font-size: 0.547vw;padding: 7px 0px;display: inline-block;}
+@media only screen and (max-width: 2560px) {
+    .container{max-width: 1920px;margin: auto;}
+    .menu-section ul li a {font-size: 0.898vw;}
+    /*Banner*/
+    .banner-inner-section h1 {font-size: 4.688vw;}
+    .banner-inner-section p {font-size: 1.367vw;}
+    .primary-btn, .secondary-btn {font-size: 0.781vw;}
+    /*Grid Section*/
+    .grid-inner-section h2 {font-size: 1.563vw;}
+    /*collection Section*/
+    .collection-inner-section h3 {font-size: 1.016vw;}
+    /*Footer*/
+    .footer-menu-section p{font-size: 0.938vw;}
+    .footer-menu-section ul li a {font-size: 0.820vw;}
+}
+@media only screen and (max-width: 1920px) {
+    .container{max-width: 1440px;margin: auto;}
+    .menu-section ul li a {font-size: 0.938vw;}
+    /*Banner*/
+    .banner-inner-section h1{font-size: 5.208vw;}
+    .banner-inner-section p {font-size: 1.406vw;}
+    .primary-btn, .secondary-btn {font-size: 1.042vw;}
+    /*Grid Section*/
+    .grid-inner-section h2 {font-size: 1.563vw;}
+    /*collection Section*/
+    .collection-inner-section h3{font-size: 1.042vw;}
+    /*Footer*/
+    .footer-menu-section p {font-size: 0.938vw;}
+    .footer-menu-section ul li a {font-size: 0.833vw;}
+}
+@media only screen and (max-width: 1440px) {
+    .container{max-width: 1366px;margin: auto;}
+    .menu-section ul li a {font-size: 1.250vw;}
+    /*Banner*/
+    .banner-inner-section h1{font-size: 6.944vw;}
+    .banner-inner-section p{font-size: 1.875vw;}
+    .primary-btn, .secondary-btn {font-size: 1.389vw;}
+    /*Grid Section*/
+    .grid-inner-section h2 {font-size: 2.083vw;}
+    /*collection Section*/
+    .collection-inner-section h3{font-size: 1.389vw;}
+    /*Footer*/
+    .footer-menu-section p {font-size: 1.250vw;}
+    .footer-menu-section ul li a {font-size: 1.111vw;}
+}
+@media only screen and (max-width: 1366px) {
+    .container{max-width: 1282px;margin: auto;}
+    .menu-section ul li a {font-size: 1.318vw;}
+    /*Banner*/
+    .banner-inner-section h1{font-size: 7.321vw;}
+    .banner-inner-section p{font-size: 1.977vw;}
+    .primary-btn, .secondary-btn {font-size: 1.464vw;}
+    /*Grid Section*/
+    .grid-inner-section h2 {font-size: 2.196vw;}
+    /*collection Section*/
+    .collection-inner-section h3{font-size: 1.464vw;}
+    /*Footer*/
+    .footer-menu-section p {font-size: 1.318vw;}
+    .footer-menu-section ul li a {font-size: 1.171vw;}
+}
+@media only screen and (max-width: 1282px) {
+    .container{max-width: 992px;margin: auto;}
+    .menu-section ul li a {font-size: 1.404vw;width: 100%;display: block;padding: 5px 0;}
+    /*Banner*/
+    .banner-inner-section h1{font-size: 7.800vw;}
+    .banner-inner-section p{font-size: 2.106vw;}
+    .primary-btn, .secondary-btn {font-size: 1.560vw;}
+    .banner-section {padding: 177px 0px 234px;}
+    .sticky + .banner-section{padding-top: 280px;}
+    /*Grid Section*/
+    .grid-inner-section h2{margin: 30px 0px;font-size: 2.340vw;}
+    .grid-section{margin: 40px 0px 24px;}
+    .grid-img-container img{height: 784px;}
+    /*collection Section*/
+    .collection-section{margin: 20px 0px;}
+    .collection-inner-section h3{margin: 19px 0px;font-size: 1.560vw;}
+    .collection-img-container img{height: 464px;}
+    /*Footer*/
+    .footer-menu-section p {font-size: 1.404vw;}
+    .footer-menu-section ul li a {font-size: 1.248vw;}
+}
+@media only screen and (max-width: 992px) {
+    .container{max-width: 768px;margin: auto;}
+    .menu-section {display: none;}
+    .mobile-slide-down .menu-section {display: block;padding: 10px 0px;}
+    .hamburger-menu {display: block;}
+    .cart-section {margin-left: 450px;}
+    .menu-section ul li a {font-size: 1.815vw;}
+    .mobile-slide-down .menu-section {position: absolute;left: 0;right: 0;top: 0; background: #FFF;}
+    .mobile-slide-down .menu-section ul {flex-direction: column;}
+    .mobile-slide-down .menu-section ul li {border-bottom: 1px solid #000;width: 80%;}
+    .mobile-slide-down .menu-section ul li:last-child {border-bottom: none;}
+    /* .mobile-slide-down .menu-section ul li a {font-size: 2.319vw;} */
+    /*Banner*/
+    .banner-inner-section h1{font-size: 10.081vw;}
+    .banner-inner-section p{font-size: 2.722vw;}
+    .primary-btn, .secondary-btn {font-size: 2.016vw;}
+    /*Grid Section*/
+    .grid-inner-section h2 {font-size: 3.024vw;}
+    /*collection Section*/
+    .collection-img-section {flex-wrap: wrap;}
+    .collection-img-container {width: 46%;}
+    .collection-inner-section h3{font-size: 2.016vw;}
+    /*Footer*/
+    .footer-menu-section p {font-size: 1.815vw;}
+    .footer-menu-section ul li a {font-size: 1.613vw;}
+}
+@media only screen and (max-width: 768px) {
+    .container{max-width: 600px;margin: auto;}
+    .menu-section ul li a {font-size: 2.344vw;}
+    .cart-section {margin-left: 250px;}
+    /*Banner*/
+    .banner-inner-section h1{font-size: 13.021vw;}
+    .banner-inner-section p{font-size: 3.516vw;}
+    .primary-btn, .secondary-btn {font-size: 2.604vw;}
+    /*Grid Section*/
+    .grid-inner-section h2 {font-size: 3.906vw;}
+    .grid-img-container img {height: 502px;}
+    /*collection Section*/
+    .collection-img-container{width: 45%;}
+    .collection-img-container img{height: 445px;}
+    .collection-inner-section h3{font-size: 2.604vw;}
+    /*Footer*/
+    .footer-section {flex-wrap: wrap;}
+    .footer-logo-section{width: 100%;}
+    .footer-menu-section{width: 50%;margin: 10px 0px;}
+    .footer-menu-section p {font-size: 2.344vw;}
+    .footer-menu-section ul li a {font-size: 2.083vw;}
+}
+@media only screen and (max-width: 600px) {
+    .container{max-width: 100%;margin: auto;margin-left: 5px;margin-right: 5px;padding: 0px 5px;}
+    .menu-section ul li a {font-size: 4.267vw;}
+    .cart-section {margin-left: 50px;}
+    .mobile-slide-down .menu-section ul li {width: 60%;}
+    .sticky + .banner-section {padding-top: 207px;}
+    /*Banner*/
+    .banner-section{padding: 104px 0px 113px;}
+    .banner-inner-section h1{font-size: 13.333vw;}
+    .banner-inner-section p{font-size: 4.267vw;}
+    .primary-btn{margin-top: 30px;font-size: 3.467vw;}
+    .secondary-btn {font-size: 3.467vw;}
+    /*Grid Section*/
+    .grid-section{margin: 20px 0px 10px;}
+    .grid-inner-section h2 {font-size: 4.267vw;margin: 20px 0px;}
+    .grid-img-section{flex-wrap: wrap;}
+    .grid-img-container {width: 100%;margin: 10px 10px;}
+    .grid-img-container img {height: 302px;}
+    /*collection Section*/
+    .collection-section{margin: 10px 0px;}
+    .collection-inner-section h3{font-size: 3.733vw;margin: 22px 0px;}
+    .collection-img-container{width: 100%;margin: 10px 14px;}
+    .collection-img-container img {height: 345px;}
+    /*Footer*/
+    .footer-menu-section{width: 100%;margin: 5px 0px;text-align: center;border-bottom: 1px solid #DFDFDF}
+    .footer-menu-section p{margin-bottom: 10px;font-size: 4.800vw;}
+    .footer-logo-section{text-align: center;margin-bottom: 75px;}
+    .footer-logo-section svg{max-width: 145px;}
+    .footer-menu-section ul{display: none;}
+    .footer-menu-section ul li a {font-size: 4.267vw;}
+}
